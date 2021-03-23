@@ -16,13 +16,13 @@ Copy `config.json.example` and add values appropriate to you:
 
 | Name | Type | Description |
 |------|------|-------------|
-| `fff` | String | bar |
+| `foo` | String | bar |
 
 
 ## Show an image
 
 ```shell
-python3 show_image.py $imagePath [-f]
+python3 show_image_file.py $imagePath [-f]
 ```
 
 * `-f` - Widen to full-screen.
