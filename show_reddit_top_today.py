@@ -1,10 +1,10 @@
 import sys, time
 from PIL import Image, ImageDraw
 
-from modules import epaper
+from modules import fetch, epaper
 
 # Draw image from file
-def draw_image_file(image, path, is_full_width):
+def draw_top_today_image(image, ):
   # Open image
   loaded_image = Image.open(path)
 
@@ -35,7 +35,7 @@ def draw():
 
   image, image_draw = epaper.prepare()
 
-  draw_image_file(image, path, is_full_width)
+  draw_top_today_image(image, path, is_full_width)
 
   epaper.show(image)
   time.sleep(2)

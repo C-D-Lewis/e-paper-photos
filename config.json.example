@@ -1,1 +1,7 @@
-{}
+{
+  "mode": "single",
+  "args": {
+    "path": "images/test.png",
+    "full_width": "false"
+  }
+}
