@@ -33,5 +33,5 @@ Show a single image. Arguments:
 | Name | Type | Description |
 |------|------|-------------|
 | `path` | String | Path to the single image to show. |
-| `full_screen` | Boolean | Set to "true" to fit to screen width |
+| `full_width` | Boolean | Set to "true" to fit to screen width |
 
