@@ -1,6 +1,10 @@
 # e-paper-photos
 
-E-paper photos rotations etc.
+Show photos from various sources on a Waveshare e-paper 7.5in v2 display.
+
+When run on a platform other than Raspberry Pi (i.e: not ARM) the display image
+is written to `./render.png` instead, which is useful for quickly testing
+changes.
 
 
 ## Setup
@@ -16,17 +20,18 @@ Copy `config.json.example` and add values appropriate to you:
 
 | Name | Type | Description |
 |------|------|-------------|
-| `foo` | String | bar |
+| `mode` | String | Mode - see below. |
+| `args` | Object | Mode arguments - see below |
 
 
-## Show an image
+## Modes
 
-```shell
-python3 show_image_file.py $imagePath [-f]
-```
+### `single`
 
-* `-f` - Widen to full-screen.
+Show a single image. Arguments:
 
-When run on a platform other than Raspberry Pi (i.e: not ARM) the display image
-is written to `./render.png` instead, which is useful for quickly testing
-changes.
+| Name | Type | Description |
+|------|------|-------------|
+| `path` | String | Path to the single image to show. |
+| `full_screen` | Boolean | Set to "true" to fit to screen width |
+
